@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e9e9e9"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.fitzeng.zzchat.view.TitleBar
+        android:id="@+id/tb_profile"
+        app:leftBackground="@drawable/returned"
+        app:titleText="Profile"
+        app:titleTextSize="12sp"
+        app:titleTextColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </org.fitzeng.zzchat.view.TitleBar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_profile_username"
+            android:hint="new nickname"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="#dcdcdc"
+            android:maxLines="1"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/et_profile_sign"
+            android:hint="new sign"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="#dcdcdc"
+            android:maxLines="2"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/et_profile_password"
+            android:hint="new password"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:background="#dcdcdc"
+            android:paddingLeft="12dp"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/et_profile_insure_password"
+            android:hint="new insure password"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="#dcdcdc"
+            android:maxLines="1"
+            android:paddingLeft="12dp"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_profile_submit"
+            android:text="Submit"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@color/colorBlue"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

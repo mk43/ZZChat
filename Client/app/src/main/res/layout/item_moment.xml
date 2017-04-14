@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#e9e9e9"
+    android:layout_marginBottom="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_moment_content_avatar"
+            android:src="@drawable/avasterwe"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/tv_moment_content_username"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_moment_content"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_good"
+        android:gravity="center"
+        android:src="@drawable/good"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</LinearLayout>

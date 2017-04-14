@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#e9e9e9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#e9e9e9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout_moments"
+            android:background="@drawable/bgdr"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:background="#81707070"
+                android:orientation="horizontal"
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_moments_avatar"
+                    android:src="@drawable/avasterdr"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/tv_moments_username"
+                    android:textColor="#ffffff"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dcdcdc"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tv_moment_new"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#dcdcdc"
+                android:maxLines="5"
+                android:paddingLeft="12dp" />
+
+            <Button
+                android:id="@+id/btn_moment_send"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:background="#dcdcdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list_moments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</ScrollView>

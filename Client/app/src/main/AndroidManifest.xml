@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.fitzeng.zzchat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".aty.AtyWelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".aty.AtyGuide" />
+        <activity android:name=".aty.AtyLoginOrRegister" />
+        <activity android:name=".aty.AtyMain" />
+        <activity android:name=".aty.AtyDressUp" />
+        <activity android:name=".aty.AtyProfile" />
+        <activity android:name=".aty.AtySetting" />
+        <activity android:name=".aty.AtyChatRoom" />
+    </application>
+
+</manifest>

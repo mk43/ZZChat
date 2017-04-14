@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.fitzeng.zzchat.view.TitleBar
+        android:id="@+id/tb_dress_up"
+        app:leftBackground="@drawable/returned"
+        app:titleText="Dress Up"
+        app:titleTextSize="12sp"
+        app:titleTextColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </org.fitzeng.zzchat.view.TitleBar>
+
+    <TextView
+        android:text="Choose an avatar"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:text="Choose a background"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:text="Save"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:background="@color/colorBlue"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

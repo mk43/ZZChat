@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e9e9e9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.fitzeng.zzchat.view.PicAndTextBtn
+            android:id="@+id/patb_bar_groups"
+            app:pic="@drawable/rise"
+            app:text="Groups"
+            app:textSize="8sp"
+            app:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:background="#dcdcdc"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+        </org.fitzeng.zzchat.view.PicAndTextBtn>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list_groups"
+            android:background="#e9e9e9"
+            android:layout_marginBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <org.fitzeng.zzchat.view.PicAndTextBtn
+            android:id="@+id/patb_bar__contacts"
+            app:pic="@drawable/rise"
+            app:text="Contacts"
+            app:textSize="8sp"
+            app:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:background="#dcdcdc"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+        </org.fitzeng.zzchat.view.PicAndTextBtn>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list_contacts"
+            android:background="#e9e9e9"
+            android:layout_marginBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleBar">
+        <attr name="titleText" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="titleBackground" format="reference|color" />
+
+        <attr name="leftText" format="string" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="leftBackground" format="reference|color" />
+
+        <attr name="rightText" format="string" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightBackground" format="reference|color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="PicAndTextBtn" >
+        <attr name="pic" format="reference|color|integer" />
+        <attr name="picBackground" format="reference|color" />
+
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textBackground" format="reference|color" />
+    </declare-styleable>
+
+</resources>

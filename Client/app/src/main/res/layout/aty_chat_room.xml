@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.fitzeng.zzchat.view.TitleBar
+        android:id="@+id/tb_chat_room"
+        app:leftBackground="@drawable/returned"
+        app:titleTextSize="8sp"
+        app:titleTextColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </org.fitzeng.zzchat.view.TitleBar>
+
+    <ScrollView
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/lv_chat_room"
+                android:divider="#00000000"
+                android:background="#bababa"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </ListView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#b6b6b6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:text="emoji"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:background="#b6b6b6"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:text="draw"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:background="#b6b6b6"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:text="file"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:background="#b6b6b6"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:text="call"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:background="#b6b6b6"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="#bababa"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/myMsg"
+                    android:background="#e9e9e9"
+                    android:textSize="16sp"
+                    android:maxLines="4"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="4dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnSend"
+                    android:text="Send"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
